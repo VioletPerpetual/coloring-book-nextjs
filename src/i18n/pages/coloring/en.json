@@ -1,0 +1,53 @@
+{
+  "badge": "Text → Coloring Page",
+  "title": "Convert Text to Coloring Page",
+  "subtitle": "Describe your idea and generate a black & white coloring-book style line art.",
+
+  "previewTitle": "Preview",
+  "example": "example",
+
+  "presetBluey": "Bluey holding gifts",
+  "presetSpiderman": "Spiderman reading books",
+  "presetFarm": "Busy farm",
+
+  "resultTitle": "Result",
+  "statusGenerating": "generating",
+  "statusReady": "ready",
+  "statusEmpty": "empty",
+  "taskId": "taskId",
+
+  "generatingHint": "Generating... please wait",
+  "queueHint": "If queued, it may take about 1–3 minutes.",
+
+  "openNewTab": "Open in new tab",
+  "download": "Download",
+  "clear": "Clear",
+
+  "emptyLine1": "No image yet.",
+  "emptyLine2": "Use the prompt panel to generate a coloring page.",
+
+  "promptTitle": "Prompt",
+  "promptDesc": "Describe the scene. Keep it concise for best results.",
+  "aspect": "Aspect",
+  "placeholder": "For example: a wooden box in nature",
+
+  "fmtDefault": "Default",
+  "fmtSquare": "Square",
+  "fmtLandscape": "Landscape",
+
+  "quality": "Quality",
+  "qualityMedium": "medium",
+  "qualityHigh": "high",
+
+  "cta": "Turn Text to Coloring Pages",
+  "generatingBtn": "Generating...",
+
+  "tip": "Tip: avoid super long prompts.",
+  "footerNote": "Output: black & white refined lineart, high-contrast outlines, coloring-book style.",
+
+  "softTimeout": "Still generating… If it times out, retry. The task may be queued.",
+  "timeout": "Generation timed out. Retry in a moment (task may be queued).",
+  "failed": "Generate failed.",
+  "noImage": "No imageUrl returned.",
+  "promptLangHint": "Tip: Presets insert English prompts for more stable results."
+}

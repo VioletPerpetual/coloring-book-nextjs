@@ -1,0 +1,65 @@
+@baseUrl = http://localhost:3000
+@apiKey = sk-xxx
+
+### ping api
+POST {{baseUrl}}/api/ping
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "message": "hello"
+}
+
+### get user info
+POST {{baseUrl}}/api/get-user-info
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+
+### get user credits
+POST {{baseUrl}}/api/get-user-credits
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+### gen image
+POST {{baseUrl}}/api/demo/gen-image
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "prompt": "a beautiful girl running with 2 cats",
+  "provider": "replicate",
+  "model": "black-forest-labs/flux-schnell"
+}
+
+### gen text 
+POST {{baseUrl}}/api/demo/gen-text
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "prompt": "9.11 vs 9.8, which one is greater?",
+  "provider": "openrouter",
+  "model": "deepseek/deepseek-r1"
+}
+
+### send email
+POST {{baseUrl}}/api/demo/send-email
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "emails": ["test@mail.your-domain.com"],
+  "subject": "Hello from YourProductName, with Resend",
+  "content": "<p style='color: red;'>Hello from <a href='https://your-domain.com'>YourProductName</a></p>"
+}
+
+### generate coloring page (KIE)
+POST {{baseUrl}}/api/generate
+Content-Type: application/json
+
+{
+  "scene": "a cute dog holding gifts",
+  "format": "default",
+  "quality": "medium"
+}

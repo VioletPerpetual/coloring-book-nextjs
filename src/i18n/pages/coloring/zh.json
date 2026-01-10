@@ -1,0 +1,53 @@
+{
+  "badge": "文本 → 涂色页",
+  "title": "文本生成涂色页",
+  "subtitle": "描述你的想法，生成黑白涂色书风格线稿。",
+
+  "previewTitle": "预览",
+  "example": "示例",
+
+  "presetBluey": "蓝狗抱礼物",
+  "presetSpiderman": "蜘蛛侠看书",
+  "presetFarm": "繁忙农场",
+
+  "resultTitle": "结果",
+  "statusGenerating": "生成中",
+  "statusReady": "已完成",
+  "statusEmpty": "暂无",
+  "taskId": "任务ID",
+
+  "generatingHint": "生成中…请稍等",
+  "queueHint": "如遇排队，可能需要约 1–3 分钟。",
+
+  "openNewTab": "新窗口打开",
+  "download": "下载图片",
+  "clear": "清空",
+
+  "emptyLine1": "还没有生成图片。",
+  "emptyLine2": "在右侧输入提示词后点击生成。",
+
+  "promptTitle": "提示词",
+  "promptDesc": "描述场景即可，尽量简洁更稳定。",
+  "aspect": "比例",
+  "placeholder": "例如：自然里的一个木盒子",
+
+  "fmtDefault": "默认",
+  "fmtSquare": "正方形",
+  "fmtLandscape": "横向",
+
+  "quality": "质量",
+  "qualityMedium": "中等",
+  "qualityHigh": "高质量",
+
+  "cta": "生成涂色页",
+  "generatingBtn": "生成中…",
+
+  "tip": "提示：不要写太长，短句更稳定。",
+  "footerNote": "输出：黑白线稿、高对比轮廓、涂色书风格。",
+
+  "softTimeout": "仍在生成中…如超时可重试（可能在排队）。",
+  "timeout": "生成超时，请稍后重试（可能在排队）。",
+  "failed": "生成失败。",
+  "noImage": "未返回图片地址。",
+  "promptLangHint": "提示：预设会自动填入英文提示词，生成效果更稳定。"
+}
