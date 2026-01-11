@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useMemo, useRef, useState } from "react"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 
 type Format = "default" | "square" | "landscape"
 type Quality = "medium" | "high"
@@ -27,7 +27,7 @@ function sleep(ms: number) {
 
 export default function ColoringPage() {
   const t = useTranslations("pages.coloring")
-
+  const locale = useLocale()
   const PRESETS = useMemo(
     () =>
       [
@@ -35,7 +35,7 @@ export default function ColoringPage() {
         { key: "spiderman", label: t("presetSpiderman"), value: "spiderman reading books in a cozy library" },
         { key: "farm", label: t("presetFarm"), value: "a busy farm with animals and tractors" },
       ] as const,
-    [t]
+    [locale, t]
   )
 
   const [scene, setScene] = useState("")
@@ -72,6 +72,7 @@ export default function ColoringPage() {
       if (timerRef.current) window.clearInterval(timerRef.current)
       timerRef.current = null
     }
+    
   }, [loading])
 
   async function onGenerate() {
@@ -169,7 +170,7 @@ export default function ColoringPage() {
   }
 
   return (
-    <main className="mx-auto max-w-6xl px-4 pb-16 pt-10">
+    <main key={locale} className="mx-auto max-w-6xl px-4 pb-16 pt-10">
       <div className="mx-auto max-w-2xl text-center">
         <div className="inline-flex items-center gap-2 rounded-full border bg-background px-3 py-1 text-xs text-muted-foreground">
           <span className="h-1.5 w-1.5 rounded-full bg-orange-500" />
