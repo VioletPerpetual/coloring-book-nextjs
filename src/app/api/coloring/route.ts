@@ -93,7 +93,7 @@ export async function GET(req: Request) {
   const urls = data?.response?.result_urls
 
   if (!Array.isArray(urls) || urls.length === 0) {
-    // ⚠️ 关键：不要当成成功
+    //  关键：不要当成成功
     return NextResponse.json({
       status: "generating",
       taskId,
@@ -104,7 +104,7 @@ export async function GET(req: Request) {
   return NextResponse.json({
     status: "ready",
     taskId,
-    imageUrl: urls[0], // ✅ 真正的图片 URL
+    imageUrl: urls[0], //  真正的图片 URL
   })
 }
 

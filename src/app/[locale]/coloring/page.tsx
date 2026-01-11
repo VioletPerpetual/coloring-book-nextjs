@@ -89,7 +89,7 @@ export default function ColoringPage() {
 
     const softTimeout = window.setTimeout(() => {
       setError(t("softTimeout"))
-    }, 30000)
+    }, 120000)
 
     try {
       // 1) 拼接最终 prompt
@@ -123,7 +123,7 @@ export default function ColoringPage() {
       setTaskId(id)
 
       // 3) 轮询获取结果：最多 60 秒（30 次 * 2 秒）
-      for (let i = 0; i < 30; i++) {
+      for (let i = 0; i < 90; i++) {
         await sleep(2000)
 
         const poll = await fetch(`/api/coloring?taskId=${encodeURIComponent(id)}`, {

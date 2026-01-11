@@ -69,6 +69,7 @@ export default async function LandingPage({
 
           <Link
             href={`/${locale}/coloring`}
+            prefetch={false}
             className="w-full rounded-xl bg-orange-500 px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-orange-600 md:w-auto"
           >
             {safeT("coloring_entry.button")}
